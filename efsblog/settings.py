@@ -25,7 +25,7 @@ SECRET_KEY = '$+$-0fx0le65&69^*k=4*t07t&eq!rb(p48f_)i*_b+-v0(5j-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 try:
