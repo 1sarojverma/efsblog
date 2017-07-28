@@ -3,12 +3,14 @@ Django==1.11.3
 django-filter==1.0.4
 django-mathfilters==0.4.0
 djangorestframework==3.6.3
+<<<<<<< HEAD
 gunicorn==19.7.1
 Markdown==2.6.8
 requirements==0.1
 psycopg2==2.7.1
 pytz==2017.2
+=======
+>>>>>>> 1a2d5e4c2e80a13a5876e516d66aa786309e9019
 simplejson==3.11.1
 virtualenv==15.1.0
-whitenoise==3.3.0
 yahoo-finance==1.4.0
