@@ -79,3 +79,19 @@ class Stock(models.Model):
         data = Share(symbol_f)
         share_value = (data.get_open())
         return float(share_value)*float(self.shares)
+
+class Mutual(models.Model):
+    customer = models.ForeignKey(Customer, related_name='mutual')
+    name = models.CharField(max_length=50)
+    shares = models.DecimalField (max_digits=10, decimal_places=1)
+    purchase_price = models.DecimalField(max_digits=10, decimal_places=2)
+    purchase_date = models.DateField(default=timezone.now, blank=True, null=True)
+
+    def created(self):
+        self.purchase_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return str(self.customer)
+
+
